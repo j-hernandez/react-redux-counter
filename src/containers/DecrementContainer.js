@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect, connectAdvanced } from 'react-redux';
+import { connect } from 'react-redux';
 import { actionDecrement } from '../actions';
 
 const Decrement = props => (
@@ -14,12 +14,6 @@ function mapDispatchToProps(dispatch) {
         handleClick: () => {
             dispatch(actionDecrement());
         }
-    }
-}
-
-function mapStateToProps(state) {
-    return {
-        counterValue: state.count
     }
 }
 
